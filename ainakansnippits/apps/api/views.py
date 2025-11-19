@@ -9,13 +9,13 @@ from django.shortcuts import render
 from django.urls import reverse
 from django.views.decorators.http import require_http_methods
 
-from fridasnippits.apps.api.schemas import (
+from ainakansnippits.apps.api.schemas import (
     UpdateProjectSchema,
     NewProjectSchema,
     LikeProjectSchema,
 )
-from fridasnippits.apps.frontend.models import Project, Category, User
-from fridasnippits.core.github import get_latest_frida_release
+from ainakansnippits.apps.frontend.models import Project, Category, User
+from ainakansnippits.core.github import get_latest_ainakan_release
 
 
 @login_required
@@ -28,7 +28,7 @@ def create_new(request):
     try:
         cleaned_data = NewProjectSchema(json.loads(request.body))
         project_category = Category.objects.get(name=cleaned_data["category"])
-        latest_release = get_latest_frida_release()
+        latest_release = get_latest_ainakan_release()
         project = Project.objects.create(
             owner=request.user,
             category=project_category,

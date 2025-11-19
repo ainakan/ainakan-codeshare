@@ -1,5 +1,5 @@
 from django.urls import re_path
-from fridasnippits.apps.api import views
+from ainakansnippits.apps.api import views
 
 urlpatterns = [
     re_path(r"^create-new/?", views.create_new, name="create_new_project"),

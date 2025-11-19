@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 from django.db import migrations, models
-import fridasnippits.apps.frontend.models
+import ainakansnippits.apps.frontend.models
 
 
 class Migration(migrations.Migration):
@@ -16,7 +16,7 @@ class Migration(migrations.Migration):
             model_name="user",
             name="api_token",
             field=models.TextField(
-                default=fridasnippits.apps.frontend.models.generate_api_token,
+                default=ainakansnippits.apps.frontend.models.generate_api_token,
                 unique=True,
             ),
         ),

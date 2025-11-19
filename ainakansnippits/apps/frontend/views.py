@@ -10,7 +10,7 @@ from django.db import models
 # Create your views here.
 from django.urls import reverse
 
-from fridasnippits.apps.frontend.models import Category, Project, User
+from ainakansnippits.apps.frontend.models import Category, Project, User
 
 
 def index(request):

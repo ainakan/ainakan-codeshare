@@ -1,6 +1,6 @@
 from django.urls import re_path
 
-from fridasnippits.apps.frontend import views
+from ainakansnippits.apps.frontend import views
 
 urlpatterns = [
     re_path(r"^$", views.index),

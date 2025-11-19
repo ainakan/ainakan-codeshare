@@ -35,7 +35,7 @@ class Project(TimeStampedModel):
             "description": self.description,
             "source": self.project_source,
             "slug": self.project_slug,
-            "frida_version": self.latest_version,
+            "ainakan_version": self.latest_version,
         }
 
     @staticmethod
@@ -59,8 +59,8 @@ class Project(TimeStampedModel):
         return self._human_format(self.views)
 
     @property
-    def frida_command(self):
-        return "$ frida --codeshare {}/{}".format(self.owner.nickname, self.slug)
+    def ainakan_command(self):
+        return "$ ainakan --codeshare {}/{}".format(self.owner.nickname, self.slug)
 
     def increment_view(self):
         self.views = F("views") + 1

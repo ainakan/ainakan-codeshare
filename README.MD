@@ -1,8 +1,8 @@
-# Frida Codeshare
+# Ainakan Codeshare
 
 ## Description
 
-Frida Codeshare is allows users to share and discover Frida scripts. It provides a platform for developers to collaborate, learn, and enhance their skills in reverse engineering and dynamic instrumentation using Frida.
+Ainakan Codeshare is allows users to share and discover Ainakan scripts. It provides a platform for developers to collaborate, learn, and enhance their skills in reverse engineering and dynamic instrumentation using Ainakan.
 
 ## Development
 
@@ -14,8 +14,8 @@ Frida Codeshare is allows users to share and discover Frida scripts. It provides
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/frida/frida-codeshare
-   cd frida-codeshare
+   git clone https://github.com/ainakan/ainakan-codeshare
+   cd ainakan-codeshare
     ```
 2. Create a virtual environment:
    ```bash
@@ -39,11 +39,11 @@ Frida Codeshare is allows users to share and discover Frida scripts. It provides
     uv run manage.py runserver
    ```
 
-5. Open your web browser and navigate to `http://localhost:8000` to access the Frida Codeshare web application.
+5. Open your web browser and navigate to `http://localhost:8000` to access the Ainakan Codeshare web application.
 
 ## Fixtures
 To load the fixtures, run the following command:
 
 ```bash
-uv run manage.py loaddata fridasnippets/apps/fixtures/fixtures.json
+uv run manage.py loaddata ainakansnippets/apps/fixtures/fixtures.json
 ```

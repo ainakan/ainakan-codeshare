@@ -3,7 +3,7 @@ logger = logging.getLogger(__name__)
 
 def associate_existing_user(strategy, details, response, user=None, *args, **kwargs):
     """Associate with existing user based on GitHub ID from Auth0"""
-    from fridasnippits.apps.frontend.models import User
+    from ainakansnippits.apps.frontend.models import User
     
     if user:  # Already found a user, skip
         return {'user': user}
